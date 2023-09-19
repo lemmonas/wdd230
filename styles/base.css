@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+body {
+    grid-template-columns: 1fr 4fr 1fr;
+    display: grid;
+    /* grid-column: 2/3; */
+    font-family: 'Mooli', sans-serif;
+}
+
+header {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(130, 243, 219);
+    padding: 5px 30%;
+}
+
+header img {
+    /* display: inline; */
+    height: 170px;
+    grid-row: 1/2;
+    margin-right: 50px;
+}
+
+header h1 {
+    display: inline;
+    justify-items: center;
+    align-items: center;
+    margin: 20%;
+    padding: 0;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+main {
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(178, 113, 240);
+    grid-column: 2/3;
+    /* display: grid; */
+}
+
+main section h3 {
+    background-color: rgb(130, 243, 219);
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+    /* padding: 5px 46%; */
+    width: 100%;
+    text-align: center;
+}
+
+main h2 {
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+    grid-column: 2/3;
+    background-color: rgb(84, 149, 235);
+}
+
+nav a {
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    grid-column: 2/3;
+    padding: 10px;
+}
+
+.card {
+    grid-column: 2/3;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    grid-column: 2/3;
+    text-align: left;
+    margin-left: 35%;
+}
+
+li a {
+    color: black;
+}
+
+footer {
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(130, 243, 219);
+    padding: 5px 46%;
+}
