@@ -12,7 +12,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-self: center;
     justify-self: center;
-    background-color: rgb(130, 243, 219);
+    background-color: rgb(34, 237, 193);
     text-align: center;
     width: 100%;
 }
@@ -41,18 +41,19 @@ header h1 {
 main {
     align-items: center;
     justify-items: center;
-    background-color: rgb(178, 113, 240);
     grid-column: 2/3;
 }
 
 main section h3 {
-    background-color: rgb(130, 243, 219);
+    background-color: rgb(34, 237, 193);
     align-self: center;
     justify-self: center;
     grid-column: 2/3;
     width: 100%;
     text-align: center;
     padding: 20px 0;
+    margin-top: 0;
+    border-radius: 15px 15px 0 0;
 }
 
 main h2 {
@@ -62,6 +63,8 @@ main h2 {
     width: 100%;
     text-align: center;
     text-decoration: underline;
+    background-color: rgb(178, 113, 240);
+    padding: 20px 0;
 }
 
 nav {
@@ -78,14 +81,22 @@ nav a {
     flex-direction: column;
     display: flex;
     grid-column: 2/3;
-    padding: 10px;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: #2978a0;
 }
 
 .card {
     grid-column: 2/3;
     align-items: center;
     justify-items: center;
-    width: 100%;
+    max-width: 100%;
+    border: rgb(111, 111, 111) 3px solid;
+    border-radius: 15px;
+    margin: 5px 0;
+    background-color: rgb(178, 113, 240);
 }
 
 .card p {
@@ -101,13 +112,15 @@ ul {
 
 li a {
     color: black;
+    padding: 10px;
 }
 
 footer {
     grid-column: 2/3;
     align-self: center;
     justify-self: center;
-    background-color: rgb(130, 243, 219);
+    background-color: rgb(34, 237, 193);
     text-align: center;
     width: 100%;
+    padding: 10px 0;
 }
