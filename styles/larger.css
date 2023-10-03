@@ -1,0 +1,32 @@
+@media screen and (min-width: 640px) {
+    nav a {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 100%;
+        align-items: space-around;
+        justify-items: space-around;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+    }
+
+    #la {
+        grid-column: 2/3;
+    }
+
+    #info {
+        grid-column: 3/4;
+    }
+
+    header {
+        grid-column: 2/4;
+    }
+
+    main {
+        grid-column: 2/4;
+    }
+
+
+}
