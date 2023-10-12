@@ -4,6 +4,8 @@
     background-color: rgba(180, 117, 239, 0.95);
     --purple: rgba(180, 117, 239, 0.95);
     --green: rgb(34, 237, 193);
+    --blue: rgb(84, 149, 235);
+    --hover: #2978a0;
 }
 
 body {
@@ -72,10 +74,18 @@ main h2 {
     padding: 20px 0;
 }
 
-nav {
+nav ul {
+    background-color: var(--blue);
+    margin: 0;
+}
+
+nav ul li{
     font-size: 1.5em;
     grid-column: 2/3;
-    background-color: rgb(84, 149, 235);
+    background-color: var(--blue);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px 10px;
 }
 
 nav a {
@@ -86,11 +96,10 @@ nav a {
     flex-direction: column;
     display: flex;
     grid-column: 2/3;
-    padding: 20px;
 }
 
-nav a:hover {
-    background-color: #2978a0;
+nav ul li:hover {
+    background-color: var(--hover);
 }
 
 .card {
@@ -127,4 +136,36 @@ footer {
     text-align: center;
     width: 100%;
     padding: 10px 0;
+}
+
+.menu-close, .menu-open {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-close.open, .menu-open.open {
+    display: block;
+    background-color: var(--blue);
+}
+
+.nav {
+    display: none;
+}
+
+.nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    background-color: var(--hover);
+}
+
+iframe {
+    align-items: center;
+    justify-items: center;
+    grid-row: 5/6;
+    grid-column: 1/4;
+    margin-bottom: 10px;
 }
