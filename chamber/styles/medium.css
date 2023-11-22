@@ -14,4 +14,9 @@
     .menu-open, .menu-close, .menu-open.open {
         display: none;
     }
+
+    #spotlight1 h4, #spotlight2 h4, #spotlight3 h4, #spotlight1 p, #spotlight2 p, #spotlight3 p {
+        padding-left: .5rem;
+        margin-top: 0;
+    }
 }
