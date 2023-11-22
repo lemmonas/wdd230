@@ -20,7 +20,7 @@ darkmode.addEventListener('click', ()=>{
         document.documentElement.style.setProperty('--nav-text-hover-color', '#1c2fd9');
         document.documentElement.style.setProperty('--call-to-action-background', '#f2f3ae');
         document.documentElement.style.setProperty('--call-to-action-text', '#1c2fd9');
-        document.documentElement.style.setProperty('--logo-background-color', 'none');
+        document.documentElement.style.setProperty('--logo-background-color', '#1c2fd9');
         darkmode.textContent = 'DARK';
     }
 })
