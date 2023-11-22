@@ -30,10 +30,9 @@ section {
 }
 
 .hero {
-    border: none;
-    box-shadow: none;
     position: relative;
     z-index: -1;
+    margin: .5rem;
 }
 
 .hero-img {
@@ -79,6 +78,7 @@ nav {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin: .5rem;
 }
 
 .nav {
