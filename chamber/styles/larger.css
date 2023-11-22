@@ -1,0 +1,18 @@
+@media screen and (min-width: 950px){
+    .days {
+        flex-direction: row;
+    }
+
+    .spotlights {
+        flex-direction: row;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .call-to-action {
+        right: 35%;
+    }
+}

@@ -1,0 +1,17 @@
+@media screen and (min-width: 700px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .days {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .menu-open, .menu-close, .menu-open.open {
+        display: none;
+    }
+}
