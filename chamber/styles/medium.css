@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -15,7 +15,7 @@
         display: none;
     }
 
-    #spotlight1 h4, #spotlight2 h4, #spotlight3 h4, #spotlight1 p, #spotlight2 p, #spotlight3 p {
+    #spotlight1 h3, #spotlight2 h3, #spotlight3 h3, #spotlight1 p, #spotlight2 p, #spotlight3 p {
         padding-left: .5rem;
         margin-top: 0;
     }

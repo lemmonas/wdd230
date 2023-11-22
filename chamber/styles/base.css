@@ -8,13 +8,30 @@
     --shadow: #70707877;
     --heading-font: 'Playfair Display', Arial, sans-serif;
     --paragraph-font: 'Raleway', Arial, sans-serif;
+    --background-color: #1c2fd9;
+    --text-color: #f2f3ae;
+    --nav-background-color: #4ee7f9;
+    --nav-text-color: black;
+    --nav-hover-color: #f2f3ae;
+    --nav-text-hover-color: #1c2fd9;
+    --call-to-action-background: #f2f3ae;
+    --call-to-action-text: #1c2fd9;
+    --logo-background-color: none;
     font-size: 1.5rem;
 }
 
 body {
-    background-color: var(--blue);
-    color: var(--yellow);
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: var(--paragraph-font);
+}
+
+#dark-mode {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: absolute;
+    margin-left: 80%;
+    margin-top: .5rem;
 }
 
 main {
@@ -24,9 +41,10 @@ main {
 
 section {
     border: 2px solid var(--lightblue);
-    margin: .5rem;
+    margin: 1rem;
     border-radius: 5px;
     box-shadow: 10px 10px var(--shadow);
+    max-width: 88%;
 }
 
 .hero {
@@ -42,16 +60,17 @@ section {
 .call-to-action {
     position: absolute;
     right: 25%;
-    top: 20%;
+    top: 13%;
     width: 13rem;
     height: 3rem;
     font-size: 1.5rem;
-    background-color: var(--yellow);
+    background-color: var(--call-to-action-background);
+    color: var(--call-to-action-text);
 }
 
 header {
-    background-color: var(--blue);
-    color: var(--yellow);
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: grid;
     grid-template-columns: 1fr 4fr;
     font-family: var(--heading-font);
@@ -63,6 +82,9 @@ header {
     max-height: 100px;
     align-self: center;
     justify-self: center;
+    background-color: var(--logo-background-color);
+    padding: .5rem;
+    margin: .5rem;
 }
 
 header h1 {
@@ -71,7 +93,7 @@ header h1 {
 }
 
 nav {
-    background-color: var(--lightblue);
+    background-color: var(--nav-background-color);
     grid-column: 1/3;
     grid-row: 2/3;
     display: flex;
@@ -92,7 +114,7 @@ nav {
 }
 
 .nav li a {
-    color: black;
+    color: var(--nav-text-color);
     text-decoration: none;
     padding: .5rem;
 }
@@ -103,12 +125,16 @@ nav {
 }
 
 .nav li a:hover, .nav li a.active {
-    background-color: var(--yellow);
-    color: var(--blue);
+    background-color: var(--nav-hover-color);
+    color: var(--nav-text-hover-color);
 }
 
 .upcoming {
     text-align: center;
+}
+
+.upcoming img {
+    width: 300px;
 }
 
 .days {
@@ -120,10 +146,14 @@ nav {
 
 .days div {
     border-bottom: 2px solid var(--lightblue);
-    margin: .5rem;
+    margin: .2rem;
 }
 
-.calendar h3 {
+.days div img {
+    width: 150px;
+}
+
+.calendar h2 {
     text-align: center;
 }
 
@@ -131,13 +161,18 @@ nav {
     text-align: center;
 }
 
-.spotlight h3 {
+.weather img {
+    width: 100px;
+}
+
+.spotlight h2 {
     text-align: center;
 }
 
-.spotlights div {
+.spotlights p {
     border-bottom: 2px solid var(--lightblue);
     margin: .5rem;
+    padding-bottom: .5rem;
 }
 
 .spotlight {
@@ -159,6 +194,7 @@ nav {
 
 .spotlights div img {
     grid-row: 1/3;
+    width: 150px;
 }
 
 footer {
@@ -172,6 +208,8 @@ footer {
     max-height: 100px;
     align-self: center;
     justify-self: center;
+    background-color: var(--logo-background-color);
+    padding: .5rem;
 }
 
 #footer-name {
@@ -207,5 +245,5 @@ footer {
 
 .menu-close.open, .menu-open.open {
     display: block;
-    background-color: var(--blue);
+    background-color: var(--background-color);
 }
