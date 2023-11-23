@@ -11,6 +11,7 @@ darkmode.addEventListener('click', ()=>{
         document.documentElement.style.setProperty('--call-to-action-background', '#031299');
         document.documentElement.style.setProperty('--call-to-action-text', '#f2f3ae');
         document.documentElement.style.setProperty('--logo-background-color', '#031299');
+        document.documentElement.style.setProperty('--dark-button-background', '#031299');
         darkmode.textContent = 'LIGHT';
     }else{
         document.documentElement.style.setProperty('--background-color', '#1c2fd9');
@@ -21,6 +22,7 @@ darkmode.addEventListener('click', ()=>{
         document.documentElement.style.setProperty('--call-to-action-background', '#f2f3ae');
         document.documentElement.style.setProperty('--call-to-action-text', '#1c2fd9');
         document.documentElement.style.setProperty('--logo-background-color', '#1c2fd9');
+        document.documentElement.style.setProperty('--dark-button-background', 'black');
         darkmode.textContent = 'DARK';
     }
 })
