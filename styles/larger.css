@@ -61,5 +61,12 @@
         display: none;
     }
 
+    .temple-label {
+        max-height: 960px;
+    }
 
+    .temple-label h2 {
+        left: 0px;
+        font-size: 2rem;
+    }
 }

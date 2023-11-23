@@ -52,6 +52,26 @@ main {
     grid-column: 2/3;
 }
 
+.temple-label {
+    grid-column: 1/4;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.temple-label h2 {
+    position: absolute;
+    top: 0px;
+    right: 45%;
+    background-color: var(--blue);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    max-width: fit-content;
+}
+
 main section h3 {
     background-color: var(--green);
     align-self: center;
