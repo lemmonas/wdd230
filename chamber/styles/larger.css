@@ -49,4 +49,19 @@
         grid-row: 4/5;
         margin-top: 0;
     }
+
+    #lg {
+        top: 25%;
+        font-size: 2rem;
+    }
+    
+    #md {
+        top: 40%;
+        font-size: .5rem;
+    }
+    
+    #sm {
+        top: 45%;
+        font-size: .5rem;
+    }
 }

@@ -19,4 +19,19 @@
         padding-left: .5rem;
         margin-top: 0;
     }
+
+    #lg {
+        top: 25%;
+        font-size: .5rem;
+    }
+    
+    #md {
+        top: 30%;
+        font-size: 2rem;
+    }
+    
+    #sm {
+        top: 50%;
+        font-size: .5rem;
+    }
 }

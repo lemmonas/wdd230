@@ -18,6 +18,7 @@
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 <body>
     <div><button id='dark-mode'>DARK</button></div>
@@ -35,8 +36,13 @@
         </ul>
     </nav>
     <div class="hero">
-        <img class="hero-img" src="images/tardis-hero-img.png" alt="TARDIS hero image">
-        <button class="call-to-action">Join the Doctor</button>
+        <picture>
+            <img class="hero-img" srcset="images/temp-hero-large.webp 960w, images/temp-hero-medium.webp 640w, images/temp-hero-small.webp 400w" sizes="(max-width: 800px) 400px, (max-width: 1000px) 640px, 960px" alt="TARDIS hero image">
+            <button class="call-to-action">Join the Doctor</button>
+            <h2 class="size" id="lg">Large</h2>
+            <h2 class="size" id="md">Medium</h2>
+            <h2 class="size" id="sm">Small</h2>
+        </picture>
     </div>
     <main>
         <section class="upcoming">
@@ -49,17 +55,17 @@
             <h2>Calendar</h2>
             <section class="days">
                 <div id="day1">
-                    <img src="images/victorian-england.jpg" alt="an image of Victorian England">
+                    <img src="images/victorian-england.webp" alt="an image of Victorian England">
                     <h3>Victorian England</h3>
                     <p>Ever wondered what life in England was like under the rule of Queen Victoria? Come find out and wonder no more!</p>
                 </div>
                 <div id="day2">
-                    <img src="images/earthdeath.jpg" alt="image of the sun blowing up">
+                    <img src="images/earthdeath.webp" alt="image of the sun blowing up">
                     <h3>Sun Watch Party</h3>
                     <p>In the distant future, the sun will eventually die and blow up. Join the future residents of Earth in a watch party to see it happen!</p>
                 </div>
                 <div id="day3">
-                    <img src="images/pyramids.png" alt="an image of Ancient Egypt">
+                    <img src="images/pyramids.webp" alt="an image of Ancient Egypt">
                     <h3>Ancient Egypt</h3>
                     <p>Egypt has some rich history. Come on a month long trip to see all of the major events in Ancient Egypt!</p>
                 </div>
@@ -68,24 +74,25 @@
         <section class="weather">
             <h2>Weather</h2>
             <img src="images/sun.svg" alt="weather placeholder">
-            <p>Temperature: <span id="temp">9&deg;</span></p>
-            <p>Windspeed: <span id="speed">100 mph</span></p>
+            <p>Temperature: <span id="temp">59</span></p>
+            <p>Windspeed: <span id="speed">1</span></p>
+            <p>Windchill: <span id="chill">???</span></p>
         </section>
         <section class="spotlight">
             <h2>Spotlight</h2>
             <section class="spotlights">
                 <div id="spotlight1">
-                    <img src="images/rose.jpg" alt="a picture of Rose Tyler">
+                    <img src="images/rose.webp" alt="a picture of Rose Tyler">
                     <h3>Rose Tyler</h3>
                     <p>Companion to both the Ninth and the Tenth Doctors, Rose Tyler had the most impact on the Doctor after his previous war-torn regeneration left him without compassion.</p>
                 </div>
                 <div id="spotlight2">
-                    <img src="images/amy.jpg" alt="a picture of Amy Pond">
+                    <img src="images/amy.webp" alt="a picture of Amy Pond">
                     <h3>Amy Pond</h3>
                     <p>Being the mother of the woman who marries him (that's what happens when time travel gets involved), Amy Pond has the most history with the Doctor. She was the main companion of the Eleventh Doctor, going on many adventures with him and knowing of him since she was a little girl.</p>
                 </div>
                 <div id="spotlight3">
-                    <img src="images/clara.jpg" alt="a picture of Clara Oswald">
+                    <img src="images/clara.webp" alt="a picture of Clara Oswald">
                     <h3>Clara Oswald</h3>
                     <p>Clara was companion to the Eleventh and Twelfth Doctors, and played a big role in protecting the Doctor from danger.</p>
                 </div>
