@@ -37,12 +37,14 @@
     </nav>
     <div class="hero">
         <picture>
-            <img class="hero-img" srcset="images/temp-hero-large.webp 960w, images/temp-hero-medium.webp 640w, images/temp-hero-small.webp 400w" sizes="(max-width: 800px) 400px, (max-width: 1000px) 640px, 960px" alt="TARDIS hero image">
-            <button class="call-to-action">Join the Doctor</button>
-            <h2 class="size" id="lg">Large</h2>
-            <h2 class="size" id="md">Medium</h2>
-            <h2 class="size" id="sm">Small</h2>
+            <source media="(max-width: 800px)" srcset="images/temp-hero-small.webp">
+            <source media="(max-width: 1000px)" srcset="images/temp-hero-medium.webp">
+            <img class="hero-img" src="images/temp-hero-large.webp" alt="TARDIS hero image">
         </picture>
+        <button class="call-to-action">Join the Doctor</button>
+        <h2 class="size" id="lg">Large</h2>
+        <h2 class="size" id="md">Medium</h2>
+        <h2 class="size" id="sm">Small</h2>
     </div>
     <main>
         <section class="upcoming">
