@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 900px){
     #dark-mode {
         margin-left: 90%;
     }
@@ -50,18 +50,36 @@
         margin-top: 0;
     }
 
-    #lg {
-        top: 25%;
-        font-size: 2rem;
+    .hero h2::before {
+        content: "Large ";
+    }
+
+    footer {
+        grid-template-columns: .5fr 1fr 1fr;
+    }
+
+    #footer-logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
     
-    #md {
-        top: 40%;
-        font-size: .5rem;
+    #footer-name {
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
     
-    #sm {
-        top: 45%;
-        font-size: .5rem;
+    #footer-address {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    
+    #class-deets {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    
+    #lastModified {
+        grid-column: 1/4;
+        grid-row: 3/4;
     }
 }

@@ -1,5 +1,5 @@
-@media screen and (min-width: 800px) {
-    main {
+@media screen and (min-width: 700px) {
+    .home-page {
         grid-template-columns: 1fr 1fr;
     }
     
@@ -20,18 +20,35 @@
         margin-top: 0;
     }
 
-    #lg {
-        top: 25%;
-        font-size: .5rem;
+    .hero h2::before {
+        content: "Medium ";
     }
-    
-    #md {
-        top: 30%;
-        font-size: 2rem;
+
+    .discover-page {
+        grid-template-columns: 1fr 2fr;
     }
-    
-    #sm {
-        top: 50%;
-        font-size: .5rem;
+
+    .welcome {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .demographics {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .events {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .photos {
+        grid-column: 2/3;
+        grid-row: 1/5;
+    }
+
+    .photos div img:hover {
+        transform: scale(1.1);
     }
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARDIS Chamber of Commerce | Discover</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" type="image/x-icon" href="tardis-favicon.ico">
+    <meta name="description" content="This is the discover page for the TARDIS Chamber of Commerce">
+    <meta name="author" content="Andra Hale">
+    <meta property="og:title" content="TARDIS Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lemmonas.github.io/wdd230/chamber/images/tardis-hero-large.webp">
+    <meta property="og:url" content="https://lemmonas.github.io/wdd230/chamber/discover">
+    <script src="scripts/last-modified.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <div><button id='dark-mode'>DARK</button></div>
+    <header>
+        <img id="top-logo" src="images/tardis.webp" alt="TARDIS logo">
+        <h1>TARDIS Chamber of Commerce</h1>
+    </header>
+    <button class="menu-close">X</button><button class="menu-open open">&equiv;</button>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main class="discover-page">
+        <section class="welcome">
+            <h3 id="welcome-message"></h3>
+        </section>
+        <section class="demographics">
+            <h2>Demographics</h2>
+            <p>Rooms: 186</p>
+            <p>Median Age: 900</p>
+            <p>Current Companions: 5</p>
+        </section>
+        <section class="events">
+            <h2>Local Events</h2>
+            <p>Come meet the Doctor and any current companions on the first Wednesday of every month! This is the perfect opportunity to decide whether you want to join.</p>
+        </section>
+        <section class="photos">
+            <div id="tardis-space">
+                <img src="images/tardis-space.webp" alt="An image of the TARDIS in space" loading="lazy" height="410">
+                <h3>The TARDIS in Space</h3>
+            </div>
+            <div id="tardis-interior">
+                <img src="images/tardis-interior.webp" alt="An image of the interior of the TARDIS" loading="lazy" height="409">
+                <h3>The Inside of the TARDIS</h3>
+            </div>
+            <div id="nine-rose">
+                <img src="images/nine-rose.webp" alt="An image of the ninth Doctor with Rose Tyler" loading="lazy" height="408">
+                <h3>The Ninth Doctor with Rose</h3>
+            </div>
+            <div id="ten-rose">
+                <img src="images/ten-rose.webp" alt="An image of the tenth Doctor with Rose Tyler" loading="lazy" height="407">
+                <h3>The Tenth Doctor with Rose</h3>
+            </div>
+            <div id="ten-donna">
+                <img src="images/ten-donna.webp" alt="An image of the tenth Doctor with Donna Noble" loading="lazy" height="406">
+                <h3>The Tenth Doctor with Donna</h3>
+            </div>
+            <div id="eleven-amy">
+                <img src="images/eleven-amy.webp" alt="An image of the eleventh Doctor with Amy Pond" loading="lazy" height="405">
+                <h3>The Eleventh Doctor with Amy</h3>
+            </div>
+            <div id="eleven-clara">
+                <img src="images/eleven-clara.webp" alt="An image of the eleventh Doctor with Clara Oswald" loading="lazy" height="404">
+                <h3>The Eleventh Doctor with Clara</h3>
+            </div>
+            <div id="twelve-clara">
+                <img src="images/twelve-clara.webp" alt="An image of the twelfth Doctor with Clara Oswald" loading="lazy" height="403">
+                <h3>The Twelfth Doctor with Clara</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img id="footer-logo" src="images/tardis.webp" alt="TARDIS logo">
+        <p id="footer-name">TARDIS Chamber of Commerce</p>
+        <p id="footer-address">123 Main St<br>
+        London<br>
+        123-456-7890<br>
+        Email: doctor@tardis.com</p>
+        <p id="class-deets">&copy; <span id="yr"></span> Andra Hale | WDD 230 Chamber Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

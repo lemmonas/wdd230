@@ -35,9 +35,8 @@ body {
     margin-top: .5rem;
 }
 
-main {
+.home-page {
     display: grid;
-    grid-template-columns: 1fr;
 }
 
 section {
@@ -46,6 +45,7 @@ section {
     border-radius: 5px;
     box-shadow: 10px 10px var(--shadow);
     max-width: 88%;
+    padding: .5rem;
 }
 
 .hero {
@@ -60,10 +60,10 @@ section {
 
 .call-to-action {
     position: absolute;
-    right: 25%;
+    right: 0%;
     top: 13%;
     width: 13rem;
-    height: 3rem;
+    height: 2rem;
     font-size: 1.5rem;
     background-color: var(--call-to-action-background);
     color: var(--call-to-action-text);
@@ -71,24 +71,14 @@ section {
 
 .size {
     position: absolute;
-    background-color: var(--background-color);
+    background-color: var(--logo-background-color);
     left: 8%;
+    top: 25%;
     padding: .3rem;
 }
 
-#lg {
-    top: 25%;
-    font-size: .5rem;
-}
-
-#md {
-    top: 30%;
-    font-size: .5rem;
-}
-
-#sm {
-    top: 35%;
-    font-size: 1.5rem;
+.hero h2::before {
+    content: "Small ";
 }
 
 header {
@@ -222,12 +212,12 @@ nav {
 
 footer {
     display: grid;
-    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-columns: 1fr;
     text-align: center;
 }
 
 #footer-logo {
-    grid-column: 1/2;
+    grid-row: 1/2;
     max-height: 100px;
     align-self: center;
     justify-self: center;
@@ -236,25 +226,23 @@ footer {
 }
 
 #footer-name {
-    grid-column: 2/3;
+    grid-row: 2/3;
     justify-self: center;
     align-self: center;
 }
 
 #footer-address {
-    grid-column: 3/4;
+    grid-row: 3/4;
     justify-self: center;
     align-self: center;
 }
 
 #class-deets {
-    grid-column: 1/4;
-    grid-row: 2/3;
+    grid-row: 4/5;
 }
 
 #lastModified {
-    grid-column: 1/4;
-    grid-row: 3/4;
+    grid-row: 5/6;
 }
 
 .menu-close, .menu-open {
@@ -269,4 +257,25 @@ footer {
 .menu-close.open, .menu-open.open {
     display: block;
     background-color: var(--background-color);
+}
+
+.discover-page {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.photos {
+    text-align: center;
+    max-width: 100%;
+}
+
+.photos div h3 {
+    margin-top: .2rem;
+    margin-bottom: 1.5rem;
+}
+
+.photos div img {
+    box-shadow: 10px 10px var(--shadow);
+    border-radius: 10px;
+    border: 2px solid var(--lightblue);
 }
