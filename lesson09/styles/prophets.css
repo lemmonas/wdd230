@@ -1,0 +1,24 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    border: 1px black solid;
+    text-align: center;
+    background-color: rgb(164, 174, 221);
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 250px;
+    box-shadow: 5px 5px rgba(110, 109, 109, 0.685);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(76, 51, 216);
+}
