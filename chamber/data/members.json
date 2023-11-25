@@ -1,0 +1,76 @@
+{
+    "members":[
+        {
+            "name":"Rose Tyler",
+            "address":"Powell Estate, Cardiff",
+            "phoneNumber":"642-346-9753",
+            "website":"https://tardis.fandom.com/wiki/Rose_Tyler",
+            "image":"/chamber/images/rose.webp",
+            "membership":"Year-Long"
+        },
+        {
+            "name":"Donna Noble",
+            "address":"Chriswick, West London",
+            "phoneNumber":"674-864-2947",
+            "website":"https://tardis.fandom.com/wiki/Donna_Noble",
+            "image":"/chamber/images/donna.webp",
+            "membership":"Year-Long"
+        },
+        {
+            "name":"Amy Pond",
+            "address":"Leadworth, England",
+            "phoneNumber":"592-289-1996",
+            "website":"https://tardis.fandom.com/wiki/Amy_Pond",
+            "image":"/chamber/images/amy.webp",
+            "membership":"Year-Long"
+        },
+        {
+            "name":"Clara Oswald",
+            "address":"Coal Hill, London",
+            "phoneNumber":"432-548-3462",
+            "website":"https://tardis.fandom.com/wiki/Clara_Oswald",
+            "image":"/chamber/images/clara.webp",
+            "membership":"Year-Long"
+        },
+        {
+            "name":"Martha Jones",
+            "address":"London",
+            "phoneNumber":"854-574-7534",
+            "website":"https://tardis.fandom.com/wiki/Martha_Jones",
+            "image":"/chamber/images/martha.webp",
+            "membership":"Month-Long"
+        },
+        {
+            "name":"Jack Harkness",
+            "address":"Cardiff",
+            "phoneNumber":"294-192-5748",
+            "website":"https://tardis.fandom.com/wiki/Jack_Harkness",
+            "image":"/chamber/images/jack.webp",
+            "membership":"Week-Long"
+        },
+        {
+            "name":"Bill Potts",
+            "address":"Bristol",
+            "phoneNumber":"436-754-1932",
+            "website":"https://tardis.fandom.com/wiki/Bill_Potts",
+            "image":"/chamber/images/bill.webp",
+            "membership":"Month-Long"
+        },
+        {
+            "name":"Yasmin Khan",
+            "address":"Park Hill, Sheffield",
+            "phoneNumber":"235-734-7245",
+            "website":"https://tardis.fandom.com/wiki/Yasmin_Khan",
+            "image":"/chamber/images/yasmin.webp",
+            "membership":"Month-Long"
+        },
+        {
+            "name":"UNIT",
+            "address":"Tower of London",
+            "phoneNumber":"563-764-0192",
+            "website":"https://tardis.fandom.com/wiki/UNIT",
+            "image":"/chamber/images/unit.webp",
+            "membership":"One-Time"
+        }
+    ]
+}

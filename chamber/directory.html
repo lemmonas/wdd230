@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TARDIS Chamber of Commerce | Thank You</title>
+    <title>TARDIS Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" type="image/x-icon" href="tardis-favicon.ico">
-    <meta name="description" content="This is the thank you page for the TARDIS Chamber of Commerce">
+    <meta name="description" content="This is the home page for the TARDIS Chamber of Commerce">
     <meta name="author" content="Andra Hale">
     <meta property="og:title" content="TARDIS Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <div><button id='dark-mode'>DARK</button></div>
@@ -31,12 +31,18 @@
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a class="active" href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main class="thankyou-page">
-        <h2>Thank you for joining! The Doctor will contact you shortly.</h2>
+    <main class="directory-page">
+        <div id="directory-selector">
+            <button id="directory-grid" class="active">GRID</button>
+            <button id="directory-list">LIST</button>
+        </div>
+        <div id="directory-data" class="directory-cards">
+
+        </div>
     </main>
     <footer>
         <img id="footer-logo" src="images/tardis.webp" alt="TARDIS logo">
