@@ -314,6 +314,9 @@ label {
 }
 
 .button {
+    display: block;
+    padding: .5rem;
+    margin: .5rem 0;
     background-color: var(--nav-background-color);
     color: var(--nav-text-color);
 }
