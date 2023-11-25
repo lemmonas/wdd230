@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARDIS Chamber of Commerce | Join</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" type="image/x-icon" href="tardis-favicon.ico">
+    <meta name="description" content="This is the join page for the TARDIS Chamber of Commerce">
+    <meta name="author" content="Andra Hale">
+    <meta property="og:title" content="TARDIS Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lemmonas.github.io/wdd230/chamber/images/tardis-hero-large.webp">
+    <meta property="og:url" content="https://lemmonas.github.io/wdd230/chamber">
+    <script src="scripts/last-modified.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/join-form.js" defer></script>
+</head>
+<body>
+    <div><button id='dark-mode'>DARK</button></div>
+    <header>
+        <img id="top-logo" src="images/tardis.webp" alt="TARDIS logo">
+        <h1>TARDIS Chamber of Commerce</h1>
+    </header>
+    <button class="menu-close">X</button><button class="menu-open open">&equiv;</button>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a class="active" href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="join-page">
+        <section class="join-form">
+            <form action="thankyou.html" method="get">
+                <label class="form-input">First Name*<input id="firstname" name="firstname" type="text" required></label>
+                <label class="form-input">Last Name*<input id="lastname" name="lastname" type="text" required></label>
+                <label class="form-input">Title/Position<input id="title" name="title" type="text" pattern="[A-Za-z\s\-]{7,}"></label>
+                <label class="form-input">E-mail*<input id="email" name="email" type="email" required placeholder="example@mail.com"></label>
+                <label class="form-input">Cell Phone*<input id="cellphone" name="cellphone" type="tel" required></label>
+                <label class="form-input">Business Name*<input id="business" name="business" type="text" required></label>
+                <h3>Companion Level</h3>
+                <label class="form-radio"><input type="radio" name="level" value="onetime">One-Time Trip</label>
+                <label class="form-radio"><input type="radio" name="level" value="week">Week-Long Trip</label>
+                <label class="form-radio"><input type="radio" name="level" value="month">Month-Long Trip</label>
+                <label class="form-radio"><input type="radio" name="level" value="year">Year-Long Trip</label>
+                <label class="form-input">Business Description<textarea name="description" cols="40" rows="5"></textarea></label>
+                <input id="timestamp" type="hidden" name="timestamp" value="">
+                <input type="submit" value="Join the Doctor!" class="button">
+            </form>
+        </section>
+        <section class="companion-levels">
+            <h2>Companion Levels Benefits</h2>
+            <h3>One-Time Trip</h3>
+            <ul>
+                <li>One trip to wherever the Doctor's next planned trip is</li>
+                <li>No fee</li>
+            </ul>
+            <h3>Week-Long Trip</h3>
+            <ul>
+                <li>Spend one week with the Doctor</li>
+                <li>Mostly planned trips</li>
+                <li>May get to choose an additional location to go to</li>
+                <li>Fee: $20</li>
+            </ul>
+            <h3>Month-Long Trip</h3>
+            <ul>
+                <li>Spend a month traveling with the Doctor</li>
+                <li>Will go on planned trips</li>
+                <li>Get to choose locations to visit when no trips are planned</li>
+                <li>Fee: $70</li>
+            </ul>
+            <h3>Year-Long Trip</h3>
+            <ul>
+                <li>Spend an entire year traveling with the Doctor</li>
+                <li>Help plan trips for the lower tier companions</li>
+                <li>Plan trips for just you and the Doctor</li>
+                <li>Chance to be in a spotlight position</li>
+                <li>Fee: $200</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <img id="footer-logo" src="images/tardis.webp" alt="TARDIS logo">
+        <p id="footer-name">TARDIS Chamber of Commerce</p>
+        <p id="footer-address">123 Main St<br>
+        London<br>
+        123-456-7890<br>
+        Email: doctor@tardis.com</p>
+        <p id="class-deets">&copy; <span id="yr"></span> Andra Hale | WDD 230 Chamber Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

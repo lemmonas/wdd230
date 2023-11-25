@@ -51,4 +51,8 @@
     .photos div img:hover {
         transform: scale(1.1);
     }
+
+    .form-input input, textarea{
+        width: 20rem;
+    }
 }
