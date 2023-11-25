@@ -28,7 +28,7 @@ const displayMembers = (members) => {
   members.forEach((business) => {
     let card = document.createElement("section");
     card.innerHTML = `
-    <img src="${business.image}">
+    <img src="${business.image}" loading="lazy">
     <p>${business.name}</p>
     <p>${business.address}</p>
     <p><a class="card-button" href="${business.website}">Website</a></p>
