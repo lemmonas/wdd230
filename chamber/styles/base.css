@@ -130,8 +130,8 @@ nav {
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
-    justify-items: space-around;
-    align-items: space-around;
+    justify-content: space-around;
+    align-content: space-around;
     margin: .5rem;
 }
 
