@@ -25,6 +25,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--paragraph-font);
+    box-sizing: border-box;
 }
 
 #dark-mode {
@@ -61,12 +62,30 @@ section {
 .call-to-action {
     position: absolute;
     right: 0%;
-    top: 13%;
+    top: 60%;
     width: 13rem;
     height: 2rem;
     font-size: 1.5rem;
     background-color: var(--call-to-action-background);
     color: var(--call-to-action-text);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+#banner {
+    background-color: var(--nav-background-color);
+    color: var(--nav-text-color);
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+
+#close-banner {
+    margin-left: 1rem;
 }
 
 .size {
@@ -111,8 +130,8 @@ nav {
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    justify-items: space-around;
+    align-items: space-around;
     margin: .5rem;
 }
 
@@ -133,7 +152,6 @@ nav {
 }
 
 .nav li {
-    box-sizing: border-box;
     padding: .5rem;
 }
 

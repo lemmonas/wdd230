@@ -24,6 +24,11 @@
         content: "Medium ";
     }
 
+    .call-to-action {
+        top: 65%;
+        right: 25%;
+    }
+
     .discover-page {
         grid-template-columns: 1fr 2fr;
     }
