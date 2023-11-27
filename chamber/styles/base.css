@@ -38,6 +38,8 @@ body {
 
 .home-page {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
 }
 
 section {
@@ -170,7 +172,7 @@ nav {
 
 .days {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: none;
     box-shadow: none;
 }
@@ -280,6 +282,7 @@ footer {
 .discover-page {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
 }
 
 .photos {
@@ -301,6 +304,7 @@ footer {
 .join-page {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    width: 100%;
 }
 
 input {
