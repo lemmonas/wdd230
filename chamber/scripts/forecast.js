@@ -1,7 +1,7 @@
 const lat = 51.5286051
 const lon = -0.4319374
 const apikey = `c06f23df1ed7a24ee4fcee485b38c29b`
-const forcasturl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apikey}&units=metric`
+const forcasturl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`
 
 const ONE_DAY = 24 * 60 * 60 * 1000
 
