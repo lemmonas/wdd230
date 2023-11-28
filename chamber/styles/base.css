@@ -26,6 +26,8 @@ body {
     color: var(--text-color);
     font-family: var(--paragraph-font);
     box-sizing: border-box;
+    /* width: 100%; */
+    margin: 0;
 }
 
 #dark-mode {
@@ -38,7 +40,7 @@ body {
 
 .home-page {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     width: 100%;
 }
 
@@ -53,7 +55,6 @@ section {
 
 .hero {
     position: relative;
-    z-index: -1;
     margin: .5rem;
 }
 
@@ -63,8 +64,8 @@ section {
 
 .call-to-action {
     position: absolute;
-    right: 0%;
-    top: 50%;
+    right: 5%;
+    top: 15%;
     width: 13rem;
     height: 2rem;
     font-size: 1.5rem;
@@ -74,8 +75,7 @@ section {
     text-align: center;
     padding-top: 1rem;
     margin: 0;
-    justify-content: center;
-    align-content: center;
+    z-index: 1;
 }
 
 #banner {
@@ -272,7 +272,7 @@ footer {
     width: 40px;
     height: 40px;
     position: absolute;
-    left: 92%;
+    left: 90%;
     top: 8rem;
 }
 
@@ -283,7 +283,7 @@ footer {
 
 .discover-page {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 100%;
 }
 
@@ -301,21 +301,26 @@ footer {
     box-shadow: 10px 10px var(--shadow);
     border-radius: 10px;
     border: 2px solid var(--lightblue);
+    max-width: 95%;
 }
 
 .join-page {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 100%;
 }
 
-input {
+input, textarea {
     display: block;
     padding: .5rem;
 }
 
 .form-input input, textarea{
-    width: 15rem;
+    max-width: 15rem;
+}
+
+textarea {
+    max-width: 12rem;
 }
 
 label {
@@ -356,7 +361,7 @@ label {
 
 .directory-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     text-align: center;
 }
 
