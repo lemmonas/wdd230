@@ -106,13 +106,19 @@ header {
     background-color: var(--background-color);
     color: var(--text-color);
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr 1fr;
     font-family: var(--heading-font);
     box-sizing: border-box;
 }
 
-#top-logo {
+#logo-link {
     grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+#top-logo {
+    /* grid-column: 1/2; */
     max-height: 100px;
     align-self: center;
     justify-self: center;
