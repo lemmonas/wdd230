@@ -210,11 +210,26 @@ async function getFruitData() {
     if (response.ok) {
         const data = await response.json();
         fruitOptions(data.fruits);
-        fruitNutrition(data.fruits);
     }else{
         console.error("Data couldn't be loaded");
         fruit.innerHTML = `<option>Data couldn't be loaded</option>`;
     }
 }
 
-getFruitData();
+if (window.location == "./order.html"){
+    getFruitData();
+}
+
+async function getFruitNutr() {
+    const response = await fetch(fruiturl);
+    if (response.ok) {
+        const data = await response.json();
+        fruitNutrition(data.fruits);
+    }else{
+        console.error("Data couldn't be loaded");
+    }
+}
+
+if (window.location == "./confirmation.html"){
+    getFruitNutr();
+}
