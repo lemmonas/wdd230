@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods | Confirmation</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/fruit-basket.webp"></a>
+            <button class="menu-close">X</button><button class="menu-open open">&#9776;</button>
+            <ul class="ham-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <a href="order.html" id="order-button">Order Drink</a>
+        </nav>
+    </header>
+    <main class="confirmation-page">
+        <h1>Thanks for Ordering!</h1>
+        <section class="order-details">
+            <h2>Your order</h2>
+            <p>Name: <span id="order-name"></span></p>
+            <p>Email: <span id="order-email"></span></p>
+            <p>Phone: <span id="order-phone"></span></p>
+            <p>Fruit 1: <span id="order-fruit1"></span></p>
+            <p>Fruit 2: <span id="order-fruit2"></span></p>
+            <p>Fruit 3: <span id="order-fruit3"></span></p>
+            <p>Special Instructions: <span id="order-instructions"></span></p>
+            <p>Order Date: <span id="order-date"></span></p>
+        </section>
+        <section class="nutrition">
+            <h2>Nutrition</h2>
+            <p>Carbs: <span id="carbs"></span></p>
+            <p>Protein: <span id="protein"></span></p>
+            <p>Fat: <span id="fat"></span></p>
+            <p>Sugar: <span id="sugar"></span></p>
+            <p>Calories: <span id="calories"></span></p>
+        </section>
+        <p>Estimated Pickup: <span id="pickup">10 minutes</span></p>
+        <p>Contact for Problems: 352-583-5791</p>
+        <p>Leave a review!</p>
+    </main>
+    <footer>
+        <p>bountifulfoods@smoothie.com<br>352-583-5791<br>395 Main St Carlsbad, CA</p>
+        <p>&copy; <span id="yr"></span> Bountiful Foods</p>
+        <a href="facebook.com" target="_blank" class="social"><img src="images/facebook.png" alt="facebook logo"></a>
+        <a href="instagram.com" target="_blank" class="social"><img src="images/instagram.webp" alt="instagram logo"></a>
+        <a href="twitter.com" target="_blank" class="social"><img src="images/twitter.webp" alt="twitter/x logo"></a>
+        <p id="lastModified"></p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+</body>
+</html>

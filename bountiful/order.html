@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods | Order</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/fruit-basket.webp"></a>
+            <button class="menu-close">X</button><button class="menu-open open">&#9776;</button>
+            <ul class="ham-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <a href="order.html" id="order-button" class="active">Order Drink</a>
+        </nav>
+    </header>
+    <main class="order-page">
+        <h1>Order Drink</h1>
+        <div class="order-form">
+            <form action="confirmation.html" method="get">
+                <label>First Name<input id="firstname" name="firstname" type="text" required></label>
+                <label>Email<input id="email" name="email" type="email" required></label>
+                <label>Phone Number<input id="phone" name="phone" type="tel" required></label>
+                <label>Fruit 1<select id="fruit1" name="fruit1" size="5" class="fruit"></select></label>
+                <label>Fruit 2<select id="fruit2" name="fruit2" size="5" class="fruit"></select></label>
+                <label>Fruit 3<select id="fruit3" name="fruit3" size="5" class="fruit"></select></label>
+                <label>Special Instructions<textarea name="instructions" cols="50" rows="10"></textarea></label>
+                <input id="timestamp" type="hidden" name="timestamp" value="">
+                <button type="submit" class="button">Order</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>bountifulfoods@smoothie.com<br>352-583-5791<br>395 Main St Carlsbad, CA</p>
+        <p>&copy; <span id="yr"></span> Bountiful Foods</p>
+        <a href="facebook.com" target="_blank" class="social"><img src="images/facebook.png" alt="facebook logo"></a>
+        <a href="instagram.com" target="_blank" class="social"><img src="images/instagram.webp" alt="instagram logo"></a>
+        <a href="twitter.com" target="_blank" class="social"><img src="images/twitter.webp" alt="twitter/x logo"></a>
+        <p id="lastModified"></p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+:root {
+    --green: #18DC53;
+    --purple: #7209B7;
+    --yellow: #FFD23F;
+    --red: #C53041;
+    --hero-background: #18dc53c0;
+    font-size: 1.5rem;
+}
+
+/* header {
+} */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--purple);
+    display: inline;
+    width: 25%;
+}
+
+.ham-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.ham-menu li a {
+    text-decoration: none;
+    color: var(--purple);
+    padding: .5rem;
+}
+
+#order-button {
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    background-color: var(--yellow);
+    margin-right: 1rem;
+    width: 5rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    max-width: 100%;
+    opacity: .5;
+    margin-top: .5rem;
+}
+
+#home-title {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: var(--hero-background);
+    padding: 1rem;
+    color: var(--purple);
+    
+}

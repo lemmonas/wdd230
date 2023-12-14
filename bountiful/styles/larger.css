@@ -1,0 +1,10 @@
+@media screen and (min-width: 900px) {
+    nav {
+        flex-direction: row;
+    }
+
+    /* h1 {
+        top: 30%;
+    } */
+    
+}
