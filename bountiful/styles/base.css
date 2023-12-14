@@ -5,10 +5,18 @@
     --red: #C53041;
     --hero-background: #18dc53c0;
     font-size: 1.5rem;
+    padding: .5rem;
+    box-sizing: border-box;
 }
 
-/* header {
-} */
+header {
+    background-color: white;
+}
+
+.active {
+    text-decoration: underline;
+    color: var(--purple);
+}
 
 nav {
     display: flex;
@@ -26,14 +34,28 @@ nav a {
 
 .ham-menu {
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    display: none;
 }
 
 .ham-menu li a {
     text-decoration: none;
     color: var(--purple);
     padding: .5rem;
+}
+
+.ham-menu.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-close, .menu-open {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-close.open, .menu-open.open {
+    display: block;
 }
 
 #order-button {
@@ -48,10 +70,11 @@ nav a {
 
 .hero {
     position: relative;
+    background-color: white;
 }
 
 .hero img {
-    max-width: 100%;
+    width: 100%;
     opacity: .5;
     margin-top: .5rem;
 }
@@ -64,4 +87,52 @@ nav a {
     padding: 1rem;
     color: var(--purple);
     
+}
+
+body {
+    background-color: var(--green);
+    color: var(--purple);
+    text-align: center;
+}
+
+main {
+    display: grid;
+}
+
+#icon {
+    width: 64px;
+}
+
+input, textarea {
+    display: block;
+    padding: .5rem;
+    width: 15rem;
+}
+
+label {
+    display: block;
+    padding: .5rem;
+}
+
+.order-form {
+    text-align: left;
+}
+
+.button {
+    width: 5rem;
+    height: 3rem;
+    padding: .5rem;
+}
+
+.about-page img {
+    padding: 1rem;
+    justify-self: center;
+}
+
+iframe {
+    justify-self: center;
+}
+
+.attributions-page a {
+    padding: .5rem;
 }
